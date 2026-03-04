@@ -1,58 +1,176 @@
 <!DOCTYPE html>
-<html lang="en" >
-
-<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    
-    <title>Plantilla de José</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Ortiz | Data Engineer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="container">
-    <div class="col-xs-12">
-            <div class="text-center" style="padding-top: 30px; padding-bottom: 30px;">
-                <img class="backdrop linktree">
-                <h2 style="color: #ffffff; padding-top: 20px;">Mi curso de Git y Github</h2>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">José <span>Ortiz</span></div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-    </div>
-    </div>
-
-
-    <div class="container">
-    <div class="col-xs-12">
-            <div class="text-center">
-                <div style="padding-bottom: 30px;">
-                    <button onclick="location.href='https://platzi.com/cursos/docker-fundamentos/'" type="button" class="btn btn-outline-light shake" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 800;">Mi curso de Docker</button>
-                </div>
-                <div style="padding-bottom: 30px;">
-                    <button onclick="location.href='http://aminespinoza.com'" type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">Mi sitio web</button>
-                </div>
-                <div style="padding-bottom: 30px;">
-                    <button onclick="location.href='https://www.linkedin.com/in/aminespinoza/'" type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">Conecta en mi perfil de LinkedIn</button>
-                </div>
-                <div style="padding-bottom: 30px;">
-                    <button onclick="location.href='https://www.instagram.com/aminespinoza10/'" type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">Visitame en Instagram</button>
-                </div>
-                <div style="padding-bottom: 30px;">
-                    <button onclick="location.href='https://www.youtube.com/aminespinoza'" type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">Mira mi canal de Youtube</button>
-                </div>
-            </div>
-    </div>
-    </div>
-
-        <div class="text-center">
-            <a href="https://codepen.io/nightcl4w/pen/dEjreJ" style="color: #34312f;" target="_blank">Creado por OrderMerch</a>
         </div>
+    </nav>
 
+    <header id="inicio" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-image-container">
+                <img src="jose-ortiz.png" alt="Foto de José Ortiz - Data Engineer" class="hero-photo">
+            </div>
+            <div class="hero-text-content">
+                <h1>Hola, soy <span>José Ortiz</span></h1>
+                <h2>Data Engineer</h2>
+                <p>Diseño e implemento arquitecturas de datos escalables, garantizando la calidad y el gobierno de la información para impulsar decisiones estratégicas.</p>
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="btn btn-primary">Ver mis proyectos</a>
+                    <a href="#contacto" class="btn btn-secondary">Contactar</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <!-- This pre-lander was created by Brandon Nilsson -->
-    <!-- You're welcome to edit, reproduce and change this template as long as original contributation stays present on the website at all times.  -->
+    <section id="sobre-mi" class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <p class="section-text">
+                Soy un profesional apasionado por los datos con experiencia integral en el ciclo de vida de la información. Me especializo en la construcción de pipelines ETL robustos, modelado de datos bajo arquitecturas como Medallón, y la integración de soluciones en la nube. Mi enfoque combina solidez técnica con una visión orientada a productos y automatización.
+            </p>
+        </div>
+    </section>
+
+    <section id="habilidades" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Stack Tecnológico</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Cloud & Big Data</h3>
+                    <p>Azure, AWS, Databricks</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Desarrollo</h3>
+                    <p>Python (FastAPI, Pandas), SQL</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Orquestación</h3>
+                    <p>Apache Airflow, Data Factory</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Visualización & BI</h3>
+                    <p>Power BI, Metabase</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="section">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>DataMEX API (Data-as-a-Service)</h3>
+                        <p class="project-desc">Plataforma integral que centraliza indicadores clave del mercado mexicano. Mediante una API RESTful, permite a las empresas integrar datos económicos en sus aplicaciones. El proyecto abarca el ciclo completo: orquestación de ETLs, modelado bajo mejores prácticas y despliegue de endpoints seguros para potenciar y facilitar decisiones data-driven.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>ETL Pipelines</span>
+                            <span>Cloud Analytics</span>
+                            <span>API REST</span>
+                        </div>
+                        <a href="https://github.com/joseortiztech/mx-business-intelligence-api" target="_blank" class="project-link">Ver repositorio &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Automatización de Datos Médicos</h3>
+                        <p class="project-desc">Pipeline automatizado para procesar y digitalizar masivamente fotografías de recetas médicas. Implementación de modelos de extracción de texto (OCR) para convertir datos no estructurados en información tabular limpia y lista para análisis. Esta solución elimina cuellos de botella operativos, reduciendo el trabajo manual y minimizando errores.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>OCR / IA</span>
+                            <span>Data Cleansing</span>
+                            <span>Automatización</span>
+                        </div>
+                        <a href="https://github.com/joseortiztech/extract_prescription_data" target="_blank" class="project-link">Ver detalles &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Trayectoria y Clientes</h2>
+            <p class="section-text">He colaborado con empresas líderes y consultoras tecnológicas, diseñando soluciones de datos escalables y asegurando la calidad de la información.</p>
+            
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <h3>X-DATA</h3>
+                    <p class="client-name">Cliente: <strong>NADRO</strong></p>
+                    <p class="role">Data Engineer</p>
+                    <p class="tech-stack">Azure, Databricks</p>
+                </div>
+                
+                <div class="experience-card">
+                    <h3>K2 Partnering Solutions</h3>
+                    <p class="client-name">Cliente: <strong>PepsiCo</strong></p>
+                    <p class="role">Data Engineer</p>
+                    <p class="tech-stack">Azure Data Factory, Databricks</p>
+                </div>
+
+                <div class="experience-card">
+                    <h3>FEMSA</h3>
+                    <p class="client-name">Ingeniería Interna</p>
+                    <p class="role">Data QA Engineer</p>
+                    <p class="tech-stack">Data Quality, Testing</p>
+                </div>
+
+                <div class="experience-card">
+                    <h3>Homie</h3>
+                    <p class="client-name">Ingeniería Interna</p>
+                    <p class="role">Data Engineer</p>
+                    <p class="tech-stack">AWS, Apache Airflow</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <p class="section-text">¿Buscas optimizar tu estrategia de datos o colaborar en un proyecto? Hablemos.</p>
+            <div class="contact-links">
+                <a href="mailto:albertos.ortiz.vargas@gmail.com" class="btn btn-primary">Envíame un correo</a>
+                <a href="https://www.linkedin.com/in/joseortiztech/" target="_blank" class="btn btn-secondary">LinkedIn</a>
+                <a href="https://github.com/joseortiztech" target="_blank" class="btn btn-secondary">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 José Ortiz. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <a href="https://wa.me/527202114233?text=Hola%20José,%20vi%20tu%20portafolio%20y%20me%20gustaría%20contactarte." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 32 32" class="whatsapp-icon">
+            <path d="M16.002 2.058A13.94 13.94 0 002.064 16c0 2.454.64 4.846 1.854 6.953L2 29.942l7.158-1.876a13.923 13.923 0 006.844 1.782h.004c7.696 0 13.946-6.248 13.946-13.944A13.94 13.94 0 0016.002 2.058z" fill="#25D366"/>
+            <path d="M12.33 9.497c-.287-.638-.59-.65-.863-.662-.224-.01-.482-.01-.74-.01a1.428 1.428 0 00-1.034.482c-.345.375-1.32 1.29-1.32 3.144s1.35 3.645 1.54 3.896c.19.25 2.657 4.053 6.435 5.592.898.366 1.598.585 2.146.748.9.27 1.72.232 2.365.14.722-.102 2.212-.904 2.528-1.776.316-.87.316-1.616.222-1.775-.094-.16-.345-.25-.72-.438-.374-.188-2.212-1.092-2.556-1.217-.345-.125-.596-.188-.847.188-.25.375-.968 1.217-1.186 1.467-.218.25-.436.28-.81.094-.375-.188-1.58-.583-3.013-1.86-.14-.125-1.246-1.226-1.554-1.742-.308-.516-.033-.796.155-.983.168-.168.375-.438.563-.656.188-.22.25-.376.375-.626.125-.25.062-.47-.032-.656-.094-.188-.847-2.043-1.16-2.796z" fill="#FFF"/>
+        </svg>
+    </a>
 </body>
-
 </html>
