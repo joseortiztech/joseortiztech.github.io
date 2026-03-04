@@ -1,3 +1,3 @@
-# albertusortiz.github.io
+# joseortiztech.github.io
 
 Mi pagina de prueba
