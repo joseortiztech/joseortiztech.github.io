@@ -1,0 +1,479 @@
+/* Variables de color y fuentes */
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #1a1a2e;
+    --text-color: #333;
+    --light-bg: #f4f7f6;
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Navegación */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transition);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Secciones Globales */
+.section {
+    padding: 5rem 2rem;
+}
+
+.bg-light {
+    background-color: var(--light-bg);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 0.5rem auto 0;
+}
+
+.section-text {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* ==============================
+   Hero Section Actualizada
+   ============================== */
+.hero-section {
+    min-height: 100vh; /* Asegura que ocupe al menos el alto de la pantalla */
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center;
+    background-color: var(--light-bg);
+    padding: 8rem 2rem 5rem; /* Padding superior extra para el navbar fijo */
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 4rem; /* Espacio entre imagen y texto */
+}
+
+/* Contenedor de la Imagen */
+.hero-image-container {
+    flex: 1; /* Ocupa espacio proporcional */
+    display: flex;
+    justify-content: center;
+}
+
+.hero-photo {
+    width: 300px;  /* Tamaño de la foto en escritorio */
+    height: 300px; /* Alto igual al ancho para que sea un círculo perfecto */
+    object-fit: cover; /* Asegura que la imagen no se estire */
+    border-radius: 50%; /* Hace la foto circular */
+    border: 5px solid var(--white); /* Borde blanco elegante */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Sombra suave */
+    transition: var(--transition);
+}
+
+.hero-photo:hover {
+    transform: scale(1.03); /* Efecto sutil al pasar el mouse */
+}
+
+/* Contenedor del Texto */
+.hero-text-content {
+    flex: 1.5; /* Ocupa un poco más de espacio que la imagen */
+    text-align: left; /* Texto alineado a la izquierda */
+}
+
+.hero-text-content h1 {
+    font-size: 3.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.hero-text-content h1 span {
+    color: var(--primary-color);
+}
+
+.hero-text-content h2 {
+    font-size: 2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.hero-text-content p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 0 2.5rem 0; /* Margen solo abajo */
+    color: #666;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start; /* Botones alineados a la izquierda */
+}
+
+/* Ajustes para los botones en el Hero (eliminamos márgenes antiguos) */
+.hero-buttons .btn {
+    margin: 0;
+}
+
+
+/* ==============================
+   Ajustes Responsivos para el Hero
+   ============================== */
+@media screen and (max-width: 900px) {
+    .hero-container {
+        flex-direction: column; /* Apila imagen sobre texto en tablets/móviles */
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-text-content {
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-photo {
+        width: 220px; /* Foto un poco más pequeña en móviles */
+        height: 220px;
+    }
+
+    .hero-text-content h1 {
+        font-size: 2.8rem;
+    }
+    
+    .hero-buttons {
+        justify-content: center; /* Botones centrados en móviles */
+    }
+}
+
+@media screen and (max-width: 600px) {
+     .hero-text-content h1 {
+        font-size: 2.3rem;
+    }
+    .hero-photo {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* Grillas (Habilidades y Proyectos) */
+.skills-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.skill-card, .project-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: var(--transition);
+}
+
+.skill-card:hover, .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.skill-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.project-card {
+    text-align: left;
+    border-left: 4px solid var(--primary-color);
+}
+
+.project-desc {
+    margin: 1rem 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.project-tags span {
+    display: inline-block;
+    background: var(--light-bg);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.project-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Contact Links */
+.contact-links {
+    margin-top: 2rem;
+}
+
+/* Menú Móvil (Hamburguesa) */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 100vh;
+        top: 60px;
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        box-shadow: -2px 5px 10px rgba(0,0,0,0.1);
+    }
+    
+    .nav-links li {
+        margin: 2rem 0;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* ==============================
+   Sección Experiencia
+   ============================== */
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.experience-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: var(--transition);
+    border-top: 4px solid var(--secondary-color);
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    border-top: 4px solid var(--primary-color);
+}
+
+.experience-card h3 {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-card .client-name {
+    color: var(--primary-color);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.experience-card .role {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 0.3rem;
+}
+
+.experience-card .tech-stack {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* ==============================
+   Botón de WhatsApp Flotante
+   ============================== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1); /* Efecto de crecimiento al pasar el mouse */
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+}
+
+.whatsapp-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Ajustes para pantallas pequeñas (celulares) */
+@media screen and (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    .whatsapp-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
